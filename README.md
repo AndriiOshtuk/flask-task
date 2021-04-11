@@ -31,6 +31,9 @@ python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
 
+# Create missing folder
+mkdir migrations/versions
+
 # Apply migrations
 python3 manage.py db upgrade
 
